@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800');
+
+%extraLight {
+    font-weight: 200;
+}
+%light {
+    font-weight: 300;
+}
+%regular {
+    font-weight: 400;
+}
+%semiBold {
+    font-weight: 600;
+}
+%bold {
+    font-weight: 700;
+}
+%extraBold {
+    font-weight: 800;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    @extend %regular;
+}
+
+header { 
+    .header-wrap { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .main-logo-cnt { 
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .navigation-cnt { 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        
+            ul { 
+                display: flex;
+                flex-direction: row;
+                
+                li {
+                    padding: 0 10px;
+                    font-size: 15px;
+                    a { 
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .button-wrap { 
+
+                .button-container { 
+
+                    .btn {
+                        padding: 11px 34px;
+                        border-radius: 5px;
+                        background: #ffffff;
+
+                        .btn-text {
+                            font-size: 14px;
+                            color: #000000;
+                            @extend %bold;
+                        }
+                    }
+                }
+
+                .burger-menu { 
+
+                    img { 
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.buttons-wrap { 
+
+    .button-link { 
+        padding: 11px 34px;
+        border-radius: 6px;
+        background: #ffffff;
+
+        &.golden {
+            background: linear-gradient(#ff8e64, #ffe641);
+
+            .button-text {
+                color: #000000;
+            }
+        }
+
+        .button-text {
+            color: #000000;
+            font-size: 17px;
+            letter-spacing: 1px;
+            
+            @extend %bold;
+        }
+    }
+}
+
+.app-wrapper {
+    .main-wrap { 
+        background: url("../images/base-bg.jpg") no-repeat;
+        background-size: cover;
+
+        .content-wrap { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .left-cnt { 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .logo-cnt { 
+                    width: 90px;
+                    height: 90px;
+                }
+
+                .title-cnt { 
+                    line-height: 55px;
+                    font-size: 35px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    @extend %light;
+
+                    span {
+                        @extend %extraBold;
+                    }
+                }
+
+                .buttons-wrap { 
+
+                    .button-link { 
+
+                        .button-text { 
+
+                        }
+                    }
+                }
+            }
+
+            .right-cnt { 
+
+            }
+        }
+    }
+
+    .capabilities-wrap { 
+
+        .left-cnt { 
+
+            .mobile-wrap { 
+
+                img { 
+
+                }
+            }
+        }
+
+        .right-cnt { 
+
+            ul { 
+
+                .capabilities-item { 
+
+                    .title-item { 
+
+                    }
+
+                    .description-item { 
+
+                    }
+                }
+            }
+        }
+    }
+
+    .download-wrap { 
+
+        .left-cnt { 
+
+            .download-title { 
+
+            }
+
+            .download-description { 
+
+            }
+        }
+
+        .right-cnt { 
+
+            .buttons-wrap { 
+
+                .button-link { 
+
+                    .button-text { 
+
+                    }
+                }
+            }
+        }
+    }
+
+    .table-wrap { 
+
+        .table-info-cnt { 
+
+            .table-image { 
+
+                img { 
+
+                }
+            }
+
+            .table-description-cnt { 
+
+                .table-title { 
+
+                }
+
+                .table-description { 
+
+                }
+            }
+        }
+    }
+
+    .video-wrap { 
+
+        .video-info-cnt { 
+
+            .video-title { 
+
+            }
+
+            .video-description { 
+
+            }
+
+            .video-button { 
+
+                img { 
+
+                }
+            }
+        }
+    }
+
+    .choose-plan-wrap { 
+
+        .left-cnt { 
+
+            .plan-title { 
+
+            }
+
+            .plan-info { 
+
+            }
+
+            .select-wrap { 
+
+                .select-text { 
+
+                }
+
+                .options { 
+
+                }
+            }
+
+            .promocode-wrap { 
+
+                .promo-title { 
+
+                }
+
+                .promo-container { 
+
+                    input { 
+
+                    }
+
+                    button { 
+
+                    }
+                }
+            }
+        }
+
+        .right-cnt { 
+
+            .plan-description { 
+
+                .plan-title { 
+
+                }
+
+                .plan-price { 
+
+                }
+
+                ul { 
+
+                    li { 
+
+                        .icon { 
+
+                        }
+
+                        span { 
+
+                        }
+                    }
+                }
+
+                .buttons-wrap { 
+
+                    .button-link { 
+
+                        .button-text { 
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-us-wrap { 
+
+        .contact-title { 
+
+        }
+
+        .contact-description { 
+
+        }
+
+        form { 
+
+            .input-field-cnt { 
+
+                .input-field { 
+
+                    label { 
+
+                    }
+
+                    input { 
+
+                    }
+                }
+            }
+
+            .button-wrap { 
+
+                button { 
+
+                }
+            }
+        }
+    }
+}

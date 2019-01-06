@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800");
+.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt {
+  font-weight: 300;
+}
+
+body {
+  font-weight: 400;
+}
+
+header .header-wrap .navigation-cnt .button-wrap .button-container .btn .btn-text, .buttons-wrap .button-link .button-text {
+  font-weight: 700;
+}
+
+.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt span {
+  font-weight: 800;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1em;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header .header-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-wrap .main-logo-cnt {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+header .header-wrap .navigation-cnt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .header-wrap .navigation-cnt ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header .header-wrap .navigation-cnt ul li {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+header .header-wrap .navigation-cnt ul li a {
+  color: #ffffff;
+}
+
+header .header-wrap .navigation-cnt .button-wrap .button-container .btn {
+  padding: 11px 34px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+header .header-wrap .navigation-cnt .button-wrap .button-container .btn .btn-text {
+  font-size: 14px;
+  color: #000000;
+}
+
+.buttons-wrap .button-link {
+  padding: 11px 34px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.buttons-wrap .button-link.golden {
+  background: linear-gradient(#ff8e64, #ffe641);
+}
+
+.buttons-wrap .button-link.golden .button-text {
+  color: #000000;
+}
+
+.buttons-wrap .button-link .button-text {
+  color: #000000;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.app-wrapper .main-wrap {
+  background: url("../images/base-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.app-wrapper .main-wrap .content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-wrapper .main-wrap .content-wrap .left-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-wrapper .main-wrap .content-wrap .left-cnt .logo-cnt {
+  width: 90px;
+  height: 90px;
+}
+
+.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt {
+  line-height: 55px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
