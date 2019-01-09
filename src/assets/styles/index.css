@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800");
-.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt {
+.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt, .app-wrapper .how-work-wrap .how-work-title, .app-wrapper .how-work-wrap .how-work-inner .how-work-container .title-item, .app-wrapper .capabilities-wrap .left-cnt ul .capabilities-item .title-item, .app-wrapper .download-wrap .left-cnt .download-title, .app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt .table-title, .app-wrapper .video-wrap .video-info-cnt .video-title, .app-wrapper .application-wrap .app-download-inner .app-download-title, .app-wrapper .choose-plan-wrap .left-cnt .plan-title, .app-wrapper .choose-plan-wrap .right-cnt .plan-description .plan-price, .app-wrapper .contact-us-wrap .contact-title {
   font-weight: 300;
 }
 
-body {
+body, .app-wrapper .download-wrap .left-cnt .download-description, .app-wrapper .video-wrap .video-info-cnt .video-title span, .app-wrapper .application-wrap .app-download-inner .app-download-title span, .app-wrapper .application-wrap .app-download-inner .app-link-inner .link-container a, .app-wrapper .choose-plan-wrap .left-cnt .plan-title span, .app-wrapper .contact-us-wrap .contact-title span {
   font-weight: 400;
 }
 
-header .header-wrap .navigation-cnt .button-wrap .button-container .btn .btn-text, .buttons-wrap .button-link .button-text {
+header .header-wrap .navigation-cnt .button-wrap .button-container .btn .btn-text, .buttons-wrap .button-link .button-text, .app-wrapper .download-wrap .right-cnt .buttons-wrap .button-link .button-text {
   font-weight: 700;
 }
 
-.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt span {
+.app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt span, .app-wrapper .how-work-wrap .how-work-title span, .app-wrapper .how-work-wrap .how-work-inner .how-work-container .title-item span, .app-wrapper .capabilities-wrap .left-cnt ul .capabilities-item .title-item span, .app-wrapper .download-wrap .left-cnt .download-title span, .app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt .table-title span {
   font-weight: 800;
+}
+
+.wrap-container {
+  width: 1170px;
+  margin: auto;
 }
 
 html, body {
@@ -30,11 +35,13 @@ header .header-wrap {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 35px 0px;
 }
 
 header .header-wrap .main-logo-cnt {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
 }
 
 header .header-wrap .navigation-cnt {
@@ -49,7 +56,7 @@ header .header-wrap .navigation-cnt ul {
 }
 
 header .header-wrap .navigation-cnt ul li {
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 15px;
 }
 
@@ -57,8 +64,14 @@ header .header-wrap .navigation-cnt ul li a {
   color: #ffffff;
 }
 
+header .header-wrap .navigation-cnt .button-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 15px;
+}
+
 header .header-wrap .navigation-cnt .button-wrap .button-container .btn {
-  padding: 11px 34px;
+  padding: 8px 26px;
   border-radius: 5px;
   background: #ffffff;
 }
@@ -66,6 +79,11 @@ header .header-wrap .navigation-cnt .button-wrap .button-container .btn {
 header .header-wrap .navigation-cnt .button-wrap .button-container .btn .btn-text {
   font-size: 14px;
   color: #000000;
+  text-transform: uppercase;
+}
+
+header .header-wrap .navigation-cnt .button-wrap .burger-menu {
+  margin: 0 0 0 30px;
 }
 
 a {
@@ -79,6 +97,7 @@ section {
 }
 
 .buttons-wrap .button-link {
+  display: inline-block;
   padding: 11px 34px;
   border-radius: 6px;
   background: #ffffff;
@@ -109,18 +128,22 @@ section {
 .app-wrapper .main-wrap {
   background: url("../images/base-bg.jpg") no-repeat;
   background-size: cover;
+  flex-direction: column;
 }
 
 .app-wrapper .main-wrap .content-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 53px 0 0 0;
+  padding-bottom: 180px;
 }
 
 .app-wrapper .main-wrap .content-wrap .left-cnt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 90px 0 0 0;
 }
 
 .app-wrapper .main-wrap .content-wrap .left-cnt .logo-cnt {
@@ -129,50 +152,79 @@ section {
 }
 
 .app-wrapper .main-wrap .content-wrap .left-cnt .title-cnt {
-  line-height: 55px;
+  margin: 34px 0 36px 0px;
+  line-height: 50px;
   font-size: 35px;
-  letter-spacing: 1px;
+  letter-spacing: 0.88px;
   color: #ffffff;
 }
 
+.app-wrapper .main-wrap .content-wrap .left-cnt .buttons-wrap .button-link {
+  padding: 18px 16px 16px;
+  margin: 0 17px 0px 0;
+}
+
+.app-wrapper .main-wrap .content-wrap .right-cnt {
+  margin: 0 50px 0px 0;
+}
+
+.app-wrapper .main-wrap .content-wrap .right-cnt .image {
+  position: relative;
+  display: block;
+  width: 470px;
+}
+
+.app-wrapper .main-wrap .content-wrap .right-cnt .image img {
+  position: absolute;
+}
+
 .app-wrapper .how-work-wrap {
-  flex-direction: column;
-  align-items: center;
+  padding: 240px 0 122px;
   background-color: #f8f9fa;
 }
 
-.app-wrapper .how-work-wrap .how-work-title {
-  color: #282b31;
-  font-size: 35px;
-  font-weight: 300;
-  line-height: 35px;
-  letter-spacing: 0.88px;
+.app-wrapper .how-work-wrap .wrap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.app-wrapper .how-work-wrap .how-work-title span {
-  font-weight: 400;
+.app-wrapper .how-work-wrap .how-work-title {
+  margin: 0 0 73px;
+  color: #282b31;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 0.88px;
+  text-align: center;
 }
 
 .app-wrapper .how-work-wrap .how-work-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .app-wrapper .how-work-wrap .how-work-inner .how-work-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 100%;
   max-width: 370px;
+  padding: 62px 30px 68px;
   box-shadow: 0 1px 3px rgba(32, 33, 39, 0.12);
   border-radius: 12px;
   background-color: #ffffff;
 }
 
 .app-wrapper .how-work-wrap .how-work-inner .how-work-container .image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 70px;
+  margin: 0 0 26px;
   border-radius: 15px;
 }
 
@@ -192,17 +244,14 @@ section {
 }
 
 .app-wrapper .how-work-wrap .how-work-inner .how-work-container .title-item {
+  margin: 0 0 7px;
   color: #282b31;
   font-size: 20px;
-  font-weight: 300;
   line-height: 35px;
 }
 
-.app-wrapper .how-work-wrap .how-work-inner .how-work-container .title-item span {
-  font-weight: 400;
-}
-
 .app-wrapper .how-work-wrap .how-work-inner .how-work-container .description-item {
+  margin: 0 0 18px;
   color: #676c75;
   font-size: 14px;
   line-height: 25px;
@@ -218,7 +267,7 @@ section {
 
 .app-wrapper .partners-wrap {
   justify-content: center;
-  padding: 20px 0;
+  padding: 79px 0 77px;
   border-top: 1px solid #e7e8ea;
   border-bottom: 1px solid #e7e8ea;
   background-color: #ffffff;
@@ -228,11 +277,20 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 }
 
+.app-wrapper .partners-wrap ul li {
+  padding: 0 25px;
+}
+
 .app-wrapper .capabilities-wrap {
+  padding: 118px 0 111px;
+}
+
+.app-wrapper .capabilities-wrap .wrap-container {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
@@ -255,13 +313,8 @@ section {
 
 .app-wrapper .capabilities-wrap .left-cnt ul .capabilities-item .title-item {
   color: #282b31;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
   line-height: 35px;
-}
-
-.app-wrapper .capabilities-wrap .left-cnt ul .capabilities-item .title-item span {
-  font-weight: 400;
 }
 
 .app-wrapper .capabilities-wrap .left-cnt ul .capabilities-item .description-item {
@@ -272,38 +325,59 @@ section {
 }
 
 .app-wrapper .download-wrap {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  padding: 73px 0 80px;
   background: url("../images/small-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.app-wrapper .download-wrap .wrap-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app-wrapper .download-wrap .left-cnt {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 50%;
 }
 
 .app-wrapper .download-wrap .left-cnt .download-title {
   color: #ffffff;
   font-family: "Nunito Sans";
   font-size: 35px;
-  font-weight: 300;
   line-height: 50px;
-}
-
-.app-wrapper .download-wrap .left-cnt .download-title span {
-  font-weight: 400;
+  letter-spacing: 0.88px;
+  margin: 0 0 16px;
 }
 
 .app-wrapper .download-wrap .left-cnt .download-description {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
-  font-weight: 400;
   line-height: 30px;
 }
 
+.app-wrapper .download-wrap .right-cnt .buttons-wrap {
+  margin: 5px 0px 0px;
+}
+
+.app-wrapper .download-wrap .right-cnt .buttons-wrap .button-link {
+  padding: 17px 33px;
+}
+
+.app-wrapper .download-wrap .right-cnt .buttons-wrap .button-link.free-btn {
+  margin-left: 16px;
+  padding: 17px 40px;
+}
+
 .app-wrapper .table-wrap {
+  padding: 120px 0 121px;
+}
+
+.app-wrapper .table-wrap .wrap-container {
+  display: flex;
   align-content: center;
   justify-content: center;
 }
@@ -311,6 +385,7 @@ section {
 .app-wrapper .table-wrap .table-inner {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
 }
 
 .app-wrapper .table-wrap .table-inner .table-info-cnt {
@@ -336,24 +411,26 @@ section {
   background-image: url("../images/dark-bg.jpg");
 }
 
+.app-wrapper .table-wrap .table-inner .table-info-cnt .table-image img {
+  margin-top: 88px;
+}
+
 .app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 50%;
+  padding: 0 110px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt .table-title {
+  margin: 0 0 16px;
   color: #282b31;
   font-size: 35px;
-  font-weight: 300;
   line-height: 50px;
-}
-
-.app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt .table-title span {
-  font-weight: 400;
 }
 
 .app-wrapper .table-wrap .table-inner .table-info-cnt .table-description-cnt .table-description {
@@ -379,12 +456,7 @@ section {
 
 .app-wrapper .video-wrap .video-info-cnt .video-title {
   font-size: 35px;
-  font-weight: 300;
   line-height: 50px;
-}
-
-.app-wrapper .video-wrap .video-info-cnt .video-title span {
-  font-weight: 400;
 }
 
 .app-wrapper .video-wrap .video-info-cnt .video-description {
@@ -480,12 +552,7 @@ section {
 .app-wrapper .application-wrap .app-download-inner .app-download-title {
   color: #282b31;
   font-size: 35px;
-  font-weight: 300;
   line-height: 50px;
-}
-
-.app-wrapper .application-wrap .app-download-inner .app-download-title span {
-  font-weight: 400;
 }
 
 .app-wrapper .application-wrap .app-download-inner .app-link-inner {
@@ -498,7 +565,6 @@ section {
 
 .app-wrapper .application-wrap .app-download-inner .app-link-inner .link-container a {
   color: #282b31;
-  font-weight: 400;
   letter-spacing: 0.65px;
 }
 
@@ -576,13 +642,8 @@ section {
 .app-wrapper .choose-plan-wrap .left-cnt .plan-title {
   color: #282b31;
   font-size: 35px;
-  font-weight: 300;
   line-height: 50px;
   letter-spacing: 0.88px;
-}
-
-.app-wrapper .choose-plan-wrap .left-cnt .plan-title span {
-  font-weight: 400;
 }
 
 .app-wrapper .choose-plan-wrap .left-cnt .plan-info {
@@ -642,7 +703,6 @@ section {
   color: #282b31;
   font-size: 40px;
   line-height: 54px;
-  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -686,12 +746,7 @@ section {
   color: #ffffff;
   font-size: 35px;
   line-height: 50px;
-  font-weight: 300;
   letter-spacing: 0.88px;
-}
-
-.app-wrapper .contact-us-wrap .contact-title span {
-  font-weight: 400;
 }
 
 .app-wrapper .contact-us-wrap .contact-description {
