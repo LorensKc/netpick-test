@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/index.css">
 
+    <script type="text/javascript" defer src="assets/scripts/index.js"></script>
+
     <title>Netpick</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
         <div class="app-wrapper">
             <section class="main-wrap">
                 <div class="wrap-container">
-                    <header>
+                    <header class="">
                         <div class="header-wrap">
                             <div class="main-logo-cnt">
                                 AppStarter
@@ -23,16 +25,16 @@
                             <div class="navigation-cnt">
                                 <ul>
                                     <li>
-                                        <a href="#">Features</a>
+                                        <a href="#feature_wrap">Features</a>
                                     </li>
                                     <li>
-                                        <a href="#">Video Tour</a>
+                                        <a href="#video_wrap">Video Tour</a>
                                     </li>
                                     <li>
-                                        <a href="#">Reviews</a>
+                                        <a href="#app_wrap">Reviews</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pricing</a>
+                                        <a href="#price_wrap">Pricing</a>
                                     </li>
                                 </ul>
                                 <div class="button-wrap">
@@ -122,37 +124,51 @@
                 <div class="wrap-container">
                     <ul>
                         <li>
-                            <img src="assets/images/logo/wired.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/wired.png" alt="">
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/logo/lifehacker.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/lifehacker.png" alt="">
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/logo/mashable.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/mashable.png" alt="">
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/logo/theverge.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/theverge.png" alt="">
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/logo/gizmodo.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/gizmodo.png" alt="">
+                            </a>
                         </li>
                         <li>
-                            <img src="assets/images/logo/macworld.png" alt="">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/logo/macworld.png" alt="">
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="capabilities-wrap">
+            <section id="feature_wrap" class="capabilities-wrap">
                 <div class="wrap-container">
                     <div class="left-cnt">
                         <ul>
                             <li class="capabilities-item">
-                                <div class="icon-wrap">
-                                    <img src="assets/images/icons/reload.png" alt="">
-                                </div>
                                 <div class="item-inner">
-                                    <div class="title-item"><span>Sync</span> across all devices</div>
+                                    <div class="title-item">
+                                        <img src="assets/images/icons/reload.png" alt="">
+                                        <div>
+                                            <span>Sync</span> across all devices
+                                        </div>
+                                    </div>
                                     <div class="description-item">
                                         This sounded nonsense to Alice, so she said nothing,
                                         but set off at once toward the Red Queen. To her surprise, she
@@ -161,11 +177,11 @@
                                 </div>
                             </li>
                             <li class="capabilities-item">
-                                <div class="icon-wrap">
-                                    <img src="assets/images/icons/inbox.png" alt="">
-                                </div>
                                 <div class="item-inner">
-                                    <div class="title-item"><span>All emails</span> in one place</div>
+                                    <div class="title-item">
+                                        <img src="assets/images/icons/inbox.png" alt="">
+                                        <div><span>All emails </span> in one place</div>
+                                    </div>
                                     <div class="description-item">
                                         This sounded nonsense to Alice, so she said nothing,
                                         but set off at once toward the Red Queen. To her surprise, she
@@ -174,11 +190,11 @@
                                 </div>
                             </li>
                             <li class="capabilities-item">
-                                <div class="icon-wrap">
-                                    <img src="assets/images/icons/clock.png" alt="">
-                                </div>
                                 <div class="item-inner">
-                                    <div class="title-item"><span>Track</span> your time</div>
+                                    <div class="title-item">
+                                        <img src="assets/images/icons/clock.png" alt="">
+                                        <div><span>Track </span> your time</div>
+                                    </div>
                                     <div class="description-item">
                                         This sounded nonsense to Alice, so she said nothing,
                                         but set off at once toward the Red Queen. To her surprise, she
@@ -224,7 +240,7 @@
                     <div class="table-inner">
                         <div class="table-info-cnt">
                             <div class="table-image light-bg">
-                                <img src="assets/images/table-tab-1.png" alt="">
+                                <img class="animate-element" src="assets/images/table-tab-1.png" alt="">
                             </div>
                             <div class="table-description-cnt">
                                 <div class="table-title"><span>Perfect</span> landing page for your app</div>
@@ -245,14 +261,14 @@
                                 </div>
                             </div>
                             <div class="table-image dark-bg">
-                                <img src="assets/images/table-tab-2.png" alt="">
+                                <img class="animate-element" src="assets/images/table-tab-2.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="video-wrap">
+            <section id="video_wrap" class="video-wrap">
                 <div class="video-info-cnt">
                     <div class="video-title"><span>Watch</span> video tour</div>
                     <div class="video-description">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her.</div>
@@ -266,8 +282,11 @@
                 </div>
             </section>
             
-            <section class="application-wrap">
+            <section id="app_wrap" class="application-wrap">
                 <div class="app-download-inner">
+                    <div class="stars-container">
+                        <img src="../src/assets/images/icons/stars.png" alt="">
+                    </div>
                     <div class="app-download-title">
                         <span>Customers</span><br />
                         about AppStarter
@@ -354,7 +373,7 @@
                 </div>
             </section>
 
-            <section class="choose-plan-wrap">
+            <section id="price_wrap" class="choose-plan-wrap">
                 <div class="wrap-container">
                     <div class="left-cnt">
                         <div class="plan-title"><span>Choose</span> your plan</div>
@@ -430,7 +449,7 @@
 
             <section class="contact-us-wrap">
                 <div class="wrap-container">
-                    <div class="contact-title">Stay in touch</div>
+                    <div class="contact-title"><span>Stay</span> in touch</div>
                     <div class="contact-description">
                         This sounded nonsense to Alice, so she said nothing, but set
                         off at once toward the Red Queen. To her surprise, she
@@ -439,12 +458,12 @@
                     <form action="">
                         <div class="input-field-cnt">
                             <div class="input-field">
-                                <label for="name_field">Your Name</label>
-                                <input type="name" id="name_field">
+                                <!-- <label for="name_field">Your Name</label> -->
+                                <input type="name" id="name_field" placeholder="Your Name">
                             </div>
                             <div class="input-field">
-                                <label for="email_field">Email Address</label>
-                                <input type="email" id="email_field">
+                                <!-- <label for="email_field">Email Address</label> -->
+                                <input type="email" id="email_field" placeholder="Email Address">
                             </div>
                         </div>
                         <div class="input-field-cnt">
@@ -458,7 +477,26 @@
             </section>
 
             <footer>
-
+                <div class="main-logo-cnt">
+                    AppStarter
+                </div>
+                <div class="created-by-container">
+                    <div class="top">Created with by <i class="heart"></i> <span>Sergey Azovskiy</span></div>
+                    <div class="bot">© AppStarter, 2017</div>
+                </div>
+                <div class="social-liks-container">
+                    <div class="link-container">
+                        <a href="#"><i class="icon tw"></i></a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#"><i class="icon fb"></i></a>
+                        
+                    </div>
+                    <div class="link-container">
+                        <a href="#"><i class="icon inst"></i></a>
+                        
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
