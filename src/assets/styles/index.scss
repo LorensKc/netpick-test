@@ -25,7 +25,6 @@
     max-width: 1170px;
     margin: auto;
     @include mediaDesctop($w1280) {
-        // width: 940px;
         width: calc(100% - 80px);
     }
     @include mediaDesctop($w1024) {
@@ -123,18 +122,6 @@ header {
                     }
                 }
             }
-        }
-    }
-
-    &.animate-element {
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: transform 1.5s cubic-bezier(.4,0,0,1), top .8s;
-        transition-property: opacity, transform;
-        
-        &.active {
-            opacity: 1;
-            transform: none;
         }
     }
 }

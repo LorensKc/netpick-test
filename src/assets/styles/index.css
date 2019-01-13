@@ -169,18 +169,6 @@ header .header-wrap .navigation-cnt .button-wrap .burger-menu {
   }
 }
 
-header.animate-element {
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: transform 1.5s cubic-bezier(0.4, 0, 0, 1), top 0.8s;
-  transition-property: opacity, transform;
-}
-
-header.animate-element.active {
-  opacity: 1;
-  transform: none;
-}
-
 footer {
   display: flex;
   flex-direction: row;
