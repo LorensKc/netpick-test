@@ -120,12 +120,12 @@ header .header-wrap .navigation-cnt ul li {
 }
 
 header .header-wrap .navigation-cnt ul li a {
-  color: #ffffff;
-  transition: all ease .5s;
+  color: white;
+  transition: all ease .3s;
 }
 
 header .header-wrap .navigation-cnt ul li a:hover {
-  transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 header .header-wrap .navigation-cnt .button-wrap {
@@ -133,11 +133,6 @@ header .header-wrap .navigation-cnt .button-wrap {
   flex-direction: row;
   align-items: center;
   margin: 0 0 0 15px;
-  transition: all ease .5s;
-}
-
-header .header-wrap .navigation-cnt .button-wrap:hover {
-  transform: scale(1.1);
 }
 
 header .header-wrap .navigation-cnt .button-wrap .button-container .btn {
@@ -145,6 +140,11 @@ header .header-wrap .navigation-cnt .button-wrap .button-container .btn {
   padding: 11px 26px;
   border-radius: 5px;
   background: #ffffff;
+  transition: all ease .5s;
+}
+
+header .header-wrap .navigation-cnt .button-wrap .button-container .btn:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 425px) {
@@ -202,14 +202,14 @@ footer {
   }
 }
 
-footer .main-logo-cnt {
-  color: #282b31;
-}
-
 @media only screen and (max-width: 768px) {
   footer .main-logo-cnt {
     margin: 0 0 20px;
   }
+}
+
+footer .main-logo-cnt a {
+  color: #282b31;
 }
 
 footer .created-by-container {
@@ -343,9 +343,12 @@ section {
 }
 
 .main-logo-cnt {
-  color: #ffffff;
   font-size: 20px;
   letter-spacing: 0px;
+}
+
+.main-logo-cnt a {
+  color: #ffffff;
 }
 
 .app-wrapper .main-wrap {

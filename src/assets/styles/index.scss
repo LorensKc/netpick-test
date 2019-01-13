@@ -74,10 +74,10 @@ header {
                     padding: 0 15px;
                     font-size: 15px;
                     a { 
-                        color: #ffffff;
-                        transition: all ease .5s;
+                        color: rgba(255, 255, 255, 1);
+                        transition: all ease .3s;
                         &:hover {
-                            transform: scale(1.1);
+                            color: rgba(255, 255, 255, 0.6);
                         }
                     }
                 }
@@ -88,17 +88,17 @@ header {
                 flex-direction: row;
                 align-items: center;
                 margin: 0 0 0 15px;
-                transition: all ease .5s;
-                &:hover {
-                    transform: scale(1.1);
-                }
-                .button-container { 
 
+                .button-container { 
                     .btn {
                         display: inline-block;
                         padding: 11px 26px;
                         border-radius: 5px;
                         background: #ffffff;
+                        transition: all ease .5s;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                         @include mediaDesctop($w425) {
                             padding: 10px 15px;
                         }
@@ -154,11 +154,13 @@ footer {
     }
 
     .main-logo-cnt {
-        color: #282b31;
         @include mediaDesctop($w768) {
             margin: 0 0 20px;
         }
 
+        a {
+            color: #282b31;
+        }
     }
 
     .created-by-container {
@@ -293,10 +295,13 @@ section {
 }
 
 .main-logo-cnt { 
-    color: #ffffff;
     font-size: 20px;
     letter-spacing: 0px;
     @extend %extraBold;
+
+    a {
+        color: #ffffff;
+    }
 }
 
 .app-wrapper {
